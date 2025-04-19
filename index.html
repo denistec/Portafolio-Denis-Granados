@@ -12,10 +12,10 @@
 </head>
 <body>
     <nav class="contenedor-titulos">
-        <h3>Acerca de mi</h3>
-        <h3>Portafolio</h3>
-        <h3>Hoja de vida</h3>
-        <h3>Contacto</h3>
+        <h3 class="titulos-nav">Acerca de mi</h3>
+        <h3 class="titulos-nav">Portafolio</h3>
+        <h3 class="titulos-nav">Hoja de vida</h3>
+        <h3 class="titulos-nav">Contacto</h3>
     </nav>
     <main>
         <section id="home">
@@ -25,10 +25,7 @@
             <br>
             <button>Conóceme</button>
         </section>
-    </main>
-    <section>
-        <h1 class="subtitulos">Proyectos</h1>
-    </section>
+    </main>   
     <section id="acerca-de-mi">
         <h1 class="subtitulos">Acerca de mi</h1>
         <p class="parrafos">¡Hola! Soy Denis Granados Rojas, desarrolladora web junior en formación. Actualmente me encuentro aprendiendo y perfeccionando mis habilidades en desarrollo web, con especial interés en la creación de sitios modernos y funcionales.</p>   
@@ -36,18 +33,38 @@
         <p class="parrafos">Mi objetivo es seguir creciendo profesionalmente, aportar con ideas frescas y aprender de la experiencia de otros profesionales en el área del desarrollo web. </p>                   
     </section>
     <section>
+        <h1 class="subtitulos">Proyectos</h1>
+        <div class="tarjetas">
+            <div class="tarjeta" id="parImpar">
+              <div class="tarjeta-titulo">Par o Impar</div>
+            </div>
+            <div class="tarjeta" id="ordenarNumeros">
+              <div class="tarjeta-titulo">Ordenar Números</div>
+            </div>
+            <div class="tarjeta" id="calculadora">
+              <div class="tarjeta-titulo">Calculadora</div>
+            </div>
+          </div>
+    </section>
+    <section>
         <h1 class="subtitulos">Mis habilidades</h1>
         <div id="contenedor-habilidades">
             <img id="img-habilidades" src="./images/habilidades.png" alt="">
         </div>        
     </section>
-    <section class="fondo-desvanecido">
+    <section id="seccion-hoja-vida">
             <h1 class="subtitulos">Mi hoja de vida</h1>
-            <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus error inventore similique minima modi. Ipsa, unde aliquid, a, at atque nemo laboriosam fuga expedita assumenda ipsum ducimus recusandae nulla voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore a optio facilis sapiente numquam! Enim minima eos hic inventore mollitia saepe consequatur perferendis! Sit optio accusantium ratione ducimus maiores libero?</p>
+            <div id="contenedor-experiencia">
+                <img src="./images/experiencia-laboral.png" alt="">
+            </div>    
+            <div id="contenedor-educacióna">
+                <img src="./images/educacion.png" alt="">
+            </div>    
+            
         </section>
         <section>
-            <h1 class="subtitulos">Reflexión de mi camino como desarrollador/a Java</h1>
-            <p class="parrafos">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus error inventore similique minima modi. Ipsa, unde aliquid, a, at atque nemo laboriosam fuga expedita assumenda ipsum ducimus recusandae nulla voluptatum. Lorem ipsum dolor, sit amet consectetur adipisicing elit. A consequatur nam corrupti soluta aut? Aliquam, sapiente. Nesciunt, necessitatibus accusamus, nihil neque quis enim porro quisquam in quasi sed, sapiente illum.</p>
+            <h1 class="subtitulos">Reflexión de mi camino como desarrolladora Java</h1>
+            <p class="parrafos">El camino como desarrolladora web ha sido un viaje de aprendizaje constante y crecimiento acelerado. Desde mis primeros pasos explorando HTML y CSS hasta la construcción de proyectos más complejos con JavaScript, he descubierto una pasión por la creación digital que me impulsa a seguir mejorando. Cada desafío superado ha fortalecido mi capacidad de resolución de problemas y mi adaptabilidad, habilidades esenciales en este campo en constante evolución. Estoy emocionada por lo que el futuro me depara y confiada en mi capacidad para seguir creciendo y aportando valor a la comunidad de desarrolladores.</p>
             </section>
         <footer >
             <h4 id="info-contacto">Información de contacto</h4> 

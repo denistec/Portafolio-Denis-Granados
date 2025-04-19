@@ -1,6 +1,6 @@
-*{
+/* *{
   border: 1px solid rgb(240, 67, 67);
-}
+} */
 
 :root {
   --color-rosa: rgb(236, 192, 221);
@@ -29,6 +29,9 @@ nav {
   gap: 40px;
   justify-content:end;
   align-items: center;
+}
+.titulos-nav{
+  font-size: 130%;
 }
 footer {
   background-image: url(./images/footer-rosado.jpeg);
@@ -98,3 +101,58 @@ button{
 #acerca-de-mi{
   text-align: center;
 }
+.card{
+  width: 18rem
+}
+#contenedor-tarjetas{
+  display: flex;
+  justify-content: space-evenly;
+
+}
+.tarjetas {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+.tarjeta {
+  width: 220px;
+  height: 280px;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.tarjeta:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+.tarjeta-titulo {
+  width: 100%;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 14px 0;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#parImpar{
+  background-image: url(./images/parImpar.png);
+}
+#ordenarNumeros{
+  background-image: url(./images/ordenarNumeros.jpeg);
+}
+#calculadora{
+  background-image: url(./images/calculadora.jpeg);
+}
+
+
