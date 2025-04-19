@@ -1,0 +1,100 @@
+*{
+  border: 1px solid rgb(240, 67, 67);
+}
+
+:root {
+  --color-rosa: rgb(236, 192, 221);
+  --color-azul: rgb(183, 231, 245);
+  --color-azul-claro: rgb(172, 193, 201);
+  --color-verde: rgb(190, 202, 200);
+}
+/* TIPO FUENTE*/
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+body {
+  background-image: url(./images/fondo-negro.jpg);
+  
+}
+/* NAV*/
+nav {
+  display: flex;
+  background-image: url(./images/fondo-azul.jpeg);
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.contenedor-titulos {
+  display: flex;
+  gap: 40px;
+  justify-content:end;
+  align-items: center;
+}
+footer {
+  background-image: url(./images/footer-rosado.jpeg);
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.iconos-footer{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#info-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+a{
+  color: rgb(52, 61, 65);
+}
+/* home */
+#home{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5%;
+}
+#titulo{
+  color: rgb(44, 163, 106);
+  color: rgb(183, 231, 245);
+  font-family: serif;
+  font-style: italic;
+  font-size: 350%;
+}
+#computador{
+  width: 330px;  
+  height: 250px;   
+}
+#profesion{
+  color: rgb(236, 192, 221);
+  font-size: 120%;
+  margin-top: -1%;
+}
+
+/* acerca de mi */
+.subtitulos{
+  color: rgb(134, 179, 178);
+  font-size: 150%;
+  text-align: center;
+}
+.parrafos{
+  color: rgb(189, 175, 177);
+}
+button{
+  color: black;
+  background-color: var
+}
+#contenedor-habilidades{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+#img-habilidades{
+    width: 40%;
+    height: auto;
+  }
+#acerca-de-mi{
+  text-align: center;
+}
