@@ -29,42 +29,24 @@ nav {
   gap: 40px;
   justify-content:end;
   align-items: center;
+  
 }
 .titulos-nav{
   font-size: 130%;
 }
-footer {
-  background-image: url(./images/footer-rosado.jpeg);
-  height: 80px;
-  background-repeat: no-repeat;
-  background-size: cover;  
-}
-.iconos-footer{
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-#info-contacto{
-  display: flex;
-  justify-content: center;
-  align-items: end;
-}
-a{
-  color: rgb(52, 61, 65);
-}
-/* home */
 #home{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 5%;
+  justify-content: space-between;
+  
 }
 #titulo{
-  color: rgb(44, 163, 106);
   color: rgb(183, 231, 245);
   font-family: serif;
   font-style: italic;
-  font-size: 350%;
+  font-size: 450%;
+  margin: 4%;
 }
 #computador{
   width: 330px;  
@@ -73,10 +55,10 @@ a{
 #profesion{
   color: rgb(236, 192, 221);
   font-size: 120%;
-  margin-top: -1%;
-}
+  margin-top: 3%;
+  font-size: 180%;
 
-/* acerca de mi */
+}
 .subtitulos{
   color: rgb(134, 179, 178);
   font-size: 150%;
@@ -89,17 +71,34 @@ button{
   color: black;
   background-color: var
 }
+#habilidades{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #contenedor-habilidades{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  }
-#img-habilidades{
-    width: 40%;
-    height: auto;
-  }
+  width: 90%;
+}
 #acerca-de-mi{
-  text-align: center;
+  margin: 4%;
+  text-decoration: none;
+}
+.ancla-acerca-de-mi{
+  text-decoration: none;
+}
+#contenedor-hv{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#experiencia{
+  width: 60%;
+}
+#educacion{
+  width: 60%;
 }
 .card{
   width: 18rem
@@ -134,7 +133,6 @@ button{
   transform: scale(1.04);
   box-shadow: 0 8px 24px rgba(0,0,0,0.25);
 }
-
 .tarjeta-titulo {
   width: 100%;
   background: rgba(0,0,0,0.6);
@@ -153,6 +151,36 @@ button{
 }
 #calculadora{
   background-image: url(./images/calculadora.jpeg);
+}
+#contenedor-icono-desarrollo{
+  display: flex;
+  justify-content: center;
+}
+#icono-desarrollo{
+  width: 15%;
+}
+#contenedor-parrafo-reflexion{
+  margin: 2%;
+}
+footer {
+  background-image: url(./images/footer-rosado.jpeg);
+  height: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+.iconos-footer{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+}
+#info-contacto{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+a{
+  color: rgb(52, 61, 65);
 }
 
 
