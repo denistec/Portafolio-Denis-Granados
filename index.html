@@ -8,6 +8,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"/>    
     <title>Portafolio Jody</title>
     <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
     <nav class="contenedor-titulos">
@@ -24,7 +25,7 @@
             </div>
     </section>   
     <section id="acerca-de-mi">
-        <h1 class="subtitulos">Acerca de mi</h1> <br>
+        <h1 class="subtitulos">ACERCA DE MI</h1> <br>
         <div id="contenedor-acerca-de-mi">
             <p class="parrafos">¡Hola! Soy Denis Granados Rojas, desarrolladora web junior en formación. Actualmente me encuentro aprendiendo y perfeccionando mis habilidades en desarrollo web, con especial interés en la creación de sitios modernos y funcionales.</p>   
             <p class="parrafos"> Disfruto mucho el proceso de aprendizaje continuo y me motiva enfrentar nuevos desafíos tecnológicos. valoro la responsabilidad y el compromiso con los proyectos en los que participo.</p>
@@ -32,40 +33,54 @@
         </div>                   
     </section>
     <section id="seccion-proyectos">
-        <h1 class="subtitulos">Proyectos</h1>
+        <h1 class="subtitulos">PROYECTOS</h1>
         <div class="tarjetas">
-            <div class="tarjeta" id="parImpar">
-              <div class="tarjeta-titulo">Par o Impar</div>
-            </div>
-            <div class="tarjeta" id="ordenarNumeros">
-              <div class="tarjeta-titulo">Ordenar Números</div>
-            </div>
-            <div class="tarjeta" id="calculadora">
-              <div class="tarjeta-titulo">Calculadora</div>
-            </div>
-          </div>
+            <a 
+                href="https://github.com/denistec/ejerciciosJavaScript/blob/master/parImpar.js">
+                <div class="tarjeta" id="parImpar">
+                <div class="tarjeta-titulo">Par o Impar</div>
+                </div>
+            </a>
+            <a 
+                href="https://github.com/denistec/ejercicioNumeros/blob/master/script.js">
+                <div class="tarjeta" id="ordenarNumeros">
+                <div class="tarjeta-titulo">Ordenar Números</div>
+                </div>
+            </a>
+
+            <a 
+            href="https://github.com/denistec/CalculadoraPython/blob/main/todas_operaciones.py">
+                <div class="tarjeta" id="calculadora">
+                <div class="tarjeta-titulo">Calculadora</div>
+                </div>
+            </a>
+        </div>
     </section>
     <section id="habilidades">
-        <h1 class="subtitulos">Mis habilidades</h1>
+        <h1 class="subtitulos">MIS HABILIDADES</h1>
         <div id="contenedor-habilidades">
             <img id="img-habilidades" src="./images/habilidades-grafico.png" alt="">    
         </div>    
     </section>
     <section id="seccion-hoja-vida">
-            <h1 class="subtitulos">Mi hoja de vida</h1>
-            <div id="contenedor-hv">
-                <img id="educacion" src="./images/educacion2.png" alt="">
-                <img id="experiencia" src="./images/experiencia-laboral2.png" alt="">
-            </div>    
-            
+        <div id="contenedor-icono-hv"><img id="" src="./images/icono-hv.png" alt=""></div>
+        <h1 id="titulo-hv" class="subtitulos">MI HOJA DE VIDA</h1>
+        <div id="contenedor-hv">
+            <img id="educacion" src="./images/educacion2.png" alt="">
+            <img id="experiencia" src="./images/experiencia-laboral2.png" alt=""><br><br>
+            <a 
+                href="https://www.linkedin.com/in/jody-denis-granados-rojas-desarrollo-web-full-stack/">
+                <button><h2 id="texto-boton" class="subtitulos">Perfil LinkedIn</h2></button>
+            </a> 
+            </div>
         </section>
-        <section>
-            <h1 class="subtitulos">Reflexión de mi camino como desarrolladora Java</h1>
+        <section id="seccion-reflexion">
+            <h1 class="subtitulos">REFLEXION DE MI CAMINO COMO DESARROLLADORA JAVA</h1>
             <div id="contenedor-icono-desarrollo">
                 <img id="icono-desarrollo" src="./images/icono-desarrolladora.png" alt="">
             </div>
             <p id="contenedor-parrafo-reflexion" class="parrafos">El camino como desarrolladora web ha sido un viaje de aprendizaje constante y crecimiento acelerado. Desde mis primeros pasos explorando HTML y CSS hasta la construcción de proyectos más complejos con JavaScript, he descubierto una pasión por la creación digital que me impulsa a seguir mejorando. Cada desafío superado ha fortalecido mi capacidad de resolución de problemas y mi adaptabilidad, habilidades esenciales en este campo en constante evolución. Estoy emocionada por lo que el futuro me depara y confiada en mi capacidad para seguir creciendo y aportando valor a la comunidad de desarrolladores.</p>
-            </section>
+        </section>
         <footer >
             <h2 id="info-contacto">Información de contacto</h2> 
             <div class="iconos-footer">
