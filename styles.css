@@ -8,9 +8,9 @@
   --color-azul-claro: rgb(172, 193, 201);
   --color-verde: rgb(190, 202, 200);
 }
+
 /* TIPO FUENTE*/
 /* @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400..700&display=swap'); */
-
 
 body {
   background-image: url(./images/fondo-negro.jpg);
@@ -33,6 +33,7 @@ nav {
 }
 .titulos-nav{
   font-size: 150%;
+  color: rgb(19, 5, 5);
 }
 /* media queries para el NAV */
 @media (max-width: 768px) {
@@ -111,7 +112,7 @@ button{
   flex-direction: column;
   align-items: center;
 }
-#titulo-hv{
+#titulo-hv {
   color: var(--color-rosa);
 }
 #contenedor-icono-hv{
@@ -120,6 +121,23 @@ button{
   height: 10vw;
   margin-top: 3%;
 }
+#contenedor-icono-hv a {
+  display: inline-block;      
+  text-decoration: none;      
+  margin: 0;
+  padding: 0;
+}
+
+#contenedor-icono-hv a img {
+  display: block;             
+  width: 100%;                
+  height: auto;               
+  max-width: 120px;       
+}
+#icono-hoja-vida:hover{
+  box-shadow: 0 0 8px 4px rgba(236, 192, 221, 0.8);
+}
+
 #experiencia{
   width: 60%;
 }
@@ -132,8 +150,9 @@ button{
 #contenedor-tarjetas{
   display: flex;
   justify-content: space-evenly;
-
 }
+
+/* Tarjetas */
 .tarjetas {
   display: flex;
   gap: 24px;
@@ -178,6 +197,16 @@ button{
 #calculadora{
   background-image: url(./images/calculadora.jpeg);
 }
+#temperatura{
+  background-image: url(./images/teperatura.jpeg);
+}
+#fitNation{
+  background-image: url(./images/fitNation.png);
+}
+#tareas{
+  background-image: url(./images/tareas\ \(2\).png);
+  background-size:100%;
+}
 #contenedor-icono-desarrollo{
   display: flex;
   justify-content: center;
@@ -199,7 +228,7 @@ button{
 #seccion-reflexion{
   margin: 5%;
 }
-footer {
+/* footer {
   background-image: url(./images/footer-rosado.jpeg);
   height: 80px;
   background-repeat: no-repeat;
@@ -218,6 +247,90 @@ footer {
 }
 a{
   color: rgb(52, 61, 65);
+} */
+
+
+/* Estilo general del footer */
+footer {
+  background-color: #1a1a1a; /* fondo oscuro */
+  color: #ece0e5; /* texto claro */
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* Título del footer */
+footer #info-contacto {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: var(--color-rosa, #ecc0dd);
+}
 
+/* Formulario de contacto */
+#formulario-contacto {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+/* Inputs del formulario */
+#formulario-contacto input[type="email"],
+#formulario-contacto input[type="text"] {
+  padding: 12px 15px;
+  border: 2px solid var(--color-rosa, #ecc0dd);
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #333;
+  min-width: 220px;
+  flex: 1 1 220px;
+  background-color: #fff;
+}
+#formulario-contacto input[type="email"] {
+  min-width: 140px;   /* ancho más corto */
+  flex: 1 1 140px;
+  max-width: 140px;   /* opcional, para limitar máximo */
+}
+
+/* Botón enviar */
+#formulario-contacto button {
+  padding: 12px 25px;
+  background-color: var(--color-rosa, #ecc0dd);
+  border: none;
+  border-radius: 8px;
+  color: #1a1a1a;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+/* Contenedor de iconos sociales */
+.iconos-footer {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Estilo de los iconos FontAwesome */
+.iconos-footer a {
+  color: var(--color-rosa, #ecc0dd);
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+/* Responsive: apilar formulario verticalmente en pantallas pequeñas */
+@media (max-width: 480px) {
+  #formulario-contacto {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  #formulario-contacto input[type="email"],
+  #formulario-contacto input[type="text"],
+  #formulario-contacto button {
+    min-width: 100%;
+    flex: unset;
+  }
+}

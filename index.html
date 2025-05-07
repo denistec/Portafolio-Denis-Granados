@@ -27,7 +27,7 @@
     <section id="acerca-de-mi">
         <h1 class="subtitulos">ACERCA DE MI</h1> <br>
         <div id="contenedor-acerca-de-mi">
-            <p class="parrafos">¡Hola! Soy Denis Granados Rojas, desarrolladora web junior en formación. Actualmente me encuentro aprendiendo y perfeccionando mis habilidades en desarrollo web, con especial interés en la creación de sitios modernos y funcionales.</p>   
+            <p class="parrafos">¡Hola! Soy Denis Granados Rojas, desarrolladora web. Actualmente me encuentro aprendiendo y perfeccionando mis habilidades en desarrollo web, con especial interés en la creación de sitios modernos y funcionales.</p>   
             <p class="parrafos"> Disfruto mucho el proceso de aprendizaje continuo y me motiva enfrentar nuevos desafíos tecnológicos. valoro la responsabilidad y el compromiso con los proyectos en los que participo.</p>
             <p class="parrafos">Mi objetivo es seguir creciendo profesionalmente, aportar con ideas frescas y aprender de la experiencia de otros profesionales en el área del desarrollo web. </p>
         </div>                   
@@ -35,25 +35,45 @@
     <section id="seccion-proyectos">
         <h1 class="subtitulos">PROYECTOS</h1>
         <div class="tarjetas">
+            <!-- Tarjeta 1 -->
             <a 
                 href="https://github.com/denistec/ejerciciosJavaScript/blob/master/parImpar.js">
                 <div class="tarjeta" id="parImpar">
                 <div class="tarjeta-titulo">Par o Impar</div>
                 </div>
             </a>
+            <!-- Tarjeta 2 -->
             <a 
                 href="https://github.com/denistec/ejercicioNumeros/blob/master/script.js">
                 <div class="tarjeta" id="ordenarNumeros">
                 <div class="tarjeta-titulo">Ordenar Números</div>
                 </div>
             </a>
-
+            <!-- Tarjeta 3 -->
             <a 
             href="https://github.com/denistec/CalculadoraPython/blob/main/todas_operaciones.py">
                 <div class="tarjeta" id="calculadora">
                 <div class="tarjeta-titulo">Calculadora</div>
                 </div>
             </a>
+             <!-- Tarjeta 4 -->
+        <a href="https://github.com/denistec/conversorTemperaturas">
+            <div class="tarjeta" id="temperatura">
+                <div class="tarjeta-titulo">Temperaturas</div>
+            </div>
+        </a>
+        <!-- Tarjeta 5 -->
+        <a href="https://github.com/Kilerwin/hakaton-1-generation">
+            <div class="tarjeta" id="fitNation">
+                <div class="tarjeta-titulo">Fit Nation</div>
+            </div>
+        </a>
+        <!-- Tarjeta 6 -->
+        <a href="https://github.com/denistec/labTareas">
+            <div class="tarjeta" id="tareas">
+                <div class="tarjeta-titulo">Tareas</div>
+            </div>
+        </a>
         </div>
     </section>
     <section id="habilidades">
@@ -63,7 +83,9 @@
         </div>    
     </section>
     <section id="seccion-hoja-vida">
-        <div id="contenedor-icono-hv"><img id="" src="./images/icono-hv.png" alt=""></div>
+        <div id="contenedor-icono-hv">
+            <a href="./Hoja de vida.pdf" download="Hoja de vida" title="Descargar HV">
+            <img id="icono-hoja-vida" src="./images/icono-hv.png" alt="" ></a></div>
         <h1 id="titulo-hv" class="subtitulos">MI HOJA DE VIDA</h1>
         <div id="contenedor-hv">
             <img id="educacion" src="./images/educacion2.png" alt="">
@@ -74,20 +96,27 @@
             </a> 
             </div>
         </section>
-        <section id="seccion-reflexion">
-            <h1 class="subtitulos">REFLEXION DE MI CAMINO COMO DESARROLLADORA JAVA</h1>
-            <div id="contenedor-icono-desarrollo">
-                <img id="icono-desarrollo" src="./images/icono-desarrolladora.png" alt="">
-            </div>
-            <p id="contenedor-parrafo-reflexion" class="parrafos">El camino como desarrolladora web ha sido un viaje de aprendizaje constante y crecimiento acelerado. Desde mis primeros pasos explorando HTML y CSS hasta la construcción de proyectos más complejos con JavaScript, he descubierto una pasión por la creación digital que me impulsa a seguir mejorando. Cada desafío superado ha fortalecido mi capacidad de resolución de problemas y mi adaptabilidad, habilidades esenciales en este campo en constante evolución. Estoy emocionada por lo que el futuro me depara y confiada en mi capacidad para seguir creciendo y aportando valor a la comunidad de desarrolladores.</p>
+    <section id="seccion-reflexion">
+        <h1 class="subtitulos">REFLEXIÓN DE MI CAMINO COMO DESARROLLADORA JAVA</h1>
+        <div id="contenedor-icono-desarrollo">
+            <img id="icono-desarrollo" src="./images/icono-desarrolladora.png" alt="">
+        </div>
+        <p id="contenedor-parrafo-reflexion" class="parrafos">El camino como desarrolladora web ha sido un viaje de aprendizaje constante y crecimiento acelerado. He descubierto una pasión por la creación digital que me impulsa a seguir mejorando. Cada desafío superado ha fortalecido mi capacidad de resolución de problemas y mi adaptabilidad. Estoy emocionada por lo que el futuro me depara y confiada en mi capacidad para seguir creciendo y aportando valor a la comunidad de desarrolladores.</p>
         </section>
-        <footer >
+    <footer>
             <h2 id="info-contacto">Información de contacto</h2> 
+        <!-- Formulario contacto -->
+            <form id="formulario-contacto">
+                <input type="email" id="correo" name="email" placeholder="Tu correo" required>
+                <input type="text" id="mensaje" name="mensaje" placeholder="Tu mensaje" required>
+                <button type="submit">Enviar</button>
+              </form>
             <div class="iconos-footer">
-            <a href="#"><i class="fa-solid fa-envelope"></i></a>
+            <a href="mailto:yodygranadosrojas@hotmail.com?subject=Consulta%20desde%20mi%20web" title="Enviar correo"><i class="fa-solid fa-envelope"></i></a>
             <a href="https://www.linkedin.com/in/jody-denis-granados-rojas-desarrollo-web-full-stack/"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://github.com/denistec"><i class="fa-brands fa-github"></i></a>        
-        </footer>
+            <a href="https://github.com/denistec"><i class="fa-brands fa-github"></i></a>          
+            </div>
+    </footer>
 
 </body>
 </html>
