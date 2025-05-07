@@ -219,9 +219,14 @@ button{
   text-align: center;
 }
 button{
-  border-radius: 10%;
-  background-color: rgb(77, 81, 80);
-}
+  border-radius: 20%;               
+  background-color: rgb(77, 81, 80); 
+  border: none;                   
+  cursor: pointer;                
+  
+} 
+
+
 #texto-boton{
   color: var(--color-rosa);
 }
